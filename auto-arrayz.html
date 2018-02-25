@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<head>
+		<title>auto-arrayz</title> <link rel="shortcut icon" href="http://chazu.arkku.net/favicon.ico" />
+		<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" /> 		
+		<link rel="stylesheet" type="text/css">				  
+		<link media="screen" href="auto-arrayz.css" type="text/css" rel="stylesheet" /> 				
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>	
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+
+	<body link="#20d0ea" vlink="#20d0ea" alink="#d4d365">
+		<div id="content">
+			<h1>auto-arrayz v1.0</h1>
+			<div id="topArea">
+				Input a raw list with items separated by a line break. Options to make list JS array (separate items with quotes and commas), remove duplicate items, sort, and minify to a single line.<br>
+				Formatting can be slow on large lists (a few seconds).<br><br>
+				
+				<button id="btnFormat">Format raw list</button><br>
+				
+				<div id="checkboxCon">
+					<input id="chkArray" type="checkbox" checked>Make JS array<br>
+					<input id="chkRemoveDupes" type="checkbox" checked>Remove duplicates<br>
+					<input id="chkMinify" type="checkbox" checked>Minify to a single line<br>
+					<input id="chkSort" type="checkbox" checked>Sort list (alphabetize)
+				</div>
+				
+				<div id="stats">
+					Items in raw list: <span class="rawAmount">-</span><br>
+					Items in formatted list: <span id="newAmount">-</span><br>
+					Duplicates removed: <span id="dupesRemoved">-</span><br><br>
+				</div>
+			</div>
+			
+			
+			<div id="textareaContainer">
+				<div id="rawContainer" class="container">
+					<h2>Raw list goes here:</h2>
+					<textarea id="rawList" class="list" rows="5"></textarea>
+				</div>
+				
+				<div id="formattedContainer" class="container">
+					<h2>Formatted list:</h2>
+					<textarea id="formattedList" class="list" rows="5"></textarea>
+				</div><br><br><br><br><br>
+				
+				
+				
+			</div><!--#textareaContainer-->
+			
+			<div id="testContainer">
+					<h2>Test  list (copy to raw list and run):</h2>
+					<textarea id="formattedList" class="list" rows="5">Apple
+Orange
+Orange
+Banana
+Apple
+Pear
+Mango
+
+					
+</textarea>
+				</div>
+			
+		</div><!--.content-->
+		<script src="auto-arrayz.js"></script>
+	</body>
+</html>
